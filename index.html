@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Habitly — Habit Tracker</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<body><main class="shell">
+<header><div><p class="eyebrow">YOUR DAILY SYSTEM</p><h1>Habitly</h1></div><button id="theme" class="icon" aria-label="Toggle theme">◐</button></header>
+<section class="hero"><div><p class="date" id="date"></p><h2>Build consistency,<br><span>one day at a time.</span></h2><p class="sub">Small actions. Visible progress. No guilt.</p></div><div class="score"><strong id="rate">0%</strong><span>today</span></div></section>
+<section class="card progress"><div class="row"><div><b>Today</b><span id="count">0 of 0 complete</span></div><b id="streak">0 day streak</b></div><div class="bar"><i id="bar"></i></div></section>
+<section class="section-head"><div><h3>My habits</h3><span id="habitCount"></span></div><button id="add-habit" class="add">+ Add habit</button></section>
+<section id="habits" class="habits"></section>
+<section class="insight card"><div class="spark">✦</div><div><b>Keep the chain alive</b><p>Consistency beats intensity. Complete your habits today to extend your streak.</p></div></section>
+</main><div id="modal" class="modal hidden"><form id="form" class="dialog"><button type="button" id="close" class="close">×</button><p class="eyebrow">NEW HABIT</p><h3>Add something worth repeating.</h3><input id="habitName" maxlength="40" placeholder="e.g. Read 20 minutes" required><div class="colors"><button type="button" data-color="mint">●</button><button type="button" data-color="violet">●</button><button type="button" data-color="orange">●</button><button type="button" data-color="blue">●</button></div><button class="primary">Add habit</button></form></div><script src="app.js"></script></body></html>
